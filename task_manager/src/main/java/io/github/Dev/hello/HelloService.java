@@ -1,5 +1,7 @@
-package io.github.Dev;
+package io.github.Dev.hello;
 
+import io.github.Dev.lang.Lang;
+import io.github.Dev.lang.LangRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,11 +11,8 @@ public class HelloService
 {
 
     static final String FALLBACK_NAME = "world";
-
     static final Lang FALLBACK_LANG = new Lang(1, "Hello","en");
-
     private LangRepository repository;
-
     private final Logger logger = LoggerFactory.getLogger(HelloService.class);
 
     HelloService()
@@ -25,18 +24,10 @@ public class HelloService
         this.repository = repository;
     }
 
-    String prepareGreeting(String name, String lang)
+    String prepareGreeting(String name, Integer langId)
     {
-        Integer langIdNum;
-        try
-        {
-            langIdNum= Optional.ofNullable(lang).map(Integer::valueOf).orElse(FALLBACK_LANG.getId());
-        }catch (NumberFormatException n){
-            logger.warn("Non-numeric Language ID used: " + lang);
-            langIdNum = FALLBACK_LANG.getId();
-        }
-
-        String welcomeMsg = repository.findbyId(langIdNum).orElse(FALLBACK_LANG).getWelcomeMsg();
+        langId = Optional.ofNullable(langId).orElse(FALLBACK_LANG.getId());
+        String welcomeMsg = repository.findbyId(langId).orElse(FALLBACK_LANG).getWelcomeMsg();
         String nameToWelcome = Optional.ofNullable(name).orElse(FALLBACK_NAME) + "!";
         return welcomeMsg + " " + nameToWelcome;
     }

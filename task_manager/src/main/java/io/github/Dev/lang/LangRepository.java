@@ -1,10 +1,10 @@
-package io.github.Dev;
+package io.github.Dev.lang;
 
 
 
+import io.github.Dev.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,7 +21,7 @@ public class LangRepository {
         session.close();
         return result;
     }
-    Optional<Lang> findbyId(Integer id)
+    public Optional<Lang> findbyId(Integer id)
     {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();

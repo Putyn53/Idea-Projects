@@ -1,6 +1,7 @@
 package io.github.Dev;
 
 
+import org.eclipse.jetty.annotations.AnnotationConfiguration;
 import org.eclipse.jetty.plus.webapp.EnvConfiguration;
 import org.eclipse.jetty.plus.webapp.PlusConfiguration;
 import org.eclipse.jetty.server.Server;
@@ -16,6 +17,7 @@ public class App {
         webapp.setContextPath("/");
         webapp.setConfigurations(new Configuration[]
                 {
+                        new AnnotationConfiguration(),
                         new WebInfConfiguration(),
                         new WebXmlConfiguration(),
                         new MetaInfConfiguration(),

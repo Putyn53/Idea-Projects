@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_languages_table.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_languages.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V3__Add_German_and_Russian.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V4__Create_table_TODO.sql" dialect="GenericSQL" />
   </component>
 </project>
