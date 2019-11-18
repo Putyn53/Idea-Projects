@@ -41,7 +41,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/github/Dev" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/task_Manager/pom.xml" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
@@ -124,7 +124,7 @@
       <workItem from="1573913244995" duration="11203000" />
       <workItem from="1574080624953" duration="1002000" />
       <workItem from="1574083365067" duration="5000" />
-      <workItem from="1574083443700" duration="6860000" />
+      <workItem from="1574083443700" duration="9424000" />
     </task>
     <servers />
   </component>
