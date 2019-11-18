@@ -15,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,7 +45,11 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.github.Dev.hello" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.Dev.todo" />
       <recent name="io.github.Dev" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -73,7 +78,7 @@
       <module name="task_manager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.Dev.*" />
+          <option name="PATTERN" value="io.github.Dev.lang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +90,12 @@
       <module name="task_manager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.Dev.*" />
+          <option name="PATTERN" value="io.github.Dev.lang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.github.Dev" />
-      <option name="MAIN_CLASS_NAME" value="io.github.Dev.HelloServiceTest" />
+      <option name="PACKAGE_NAME" value="io.github.Dev.hello" />
+      <option name="MAIN_CLASS_NAME" value="io.github.Dev.hello.HelloServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,7 +124,7 @@
       <workItem from="1573913244995" duration="11203000" />
       <workItem from="1574080624953" duration="1002000" />
       <workItem from="1574083365067" duration="5000" />
-      <workItem from="1574083443700" duration="693000" />
+      <workItem from="1574083443700" duration="6860000" />
     </task>
     <servers />
   </component>

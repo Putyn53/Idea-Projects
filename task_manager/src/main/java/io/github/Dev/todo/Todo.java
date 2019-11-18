@@ -1,4 +1,4 @@
-package io.github.Dev;
+package io.github.Dev.todo;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -9,29 +9,23 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name="languages")
-class Lang
+@Table(name="TODO")
+class Todo
 {
     @Id
     @GeneratedValue(generator="inc")
     @GenericGenerator(name="inc", strategy = "increment")
     private Integer id;
-    private String welcomeMsg;
-    private String code;
+    private String text;
+    private boolean done;
 
     /**
      * Hibernate uses this one.
      */
     @SuppressWarnings("unused")
-    public Lang()
+    public Todo()
     {
 
-    }
-    public Lang(Integer id, String welcomeMsg, String code)
-    {
-        this.id = id;
-        this.welcomeMsg = welcomeMsg;
-        this.code = code;
     }
 
     public Integer getId() {
@@ -42,19 +36,19 @@ class Lang
         this.id = id;
     }
 
-    public String getWelcomeMsg() {
-        return welcomeMsg;
+    public String getText() {
+        return text;
     }
 
-    public void setWelcomeMsg(String welcomeMsg) {
-        this.welcomeMsg = welcomeMsg;
+    public void setText(String text) {
+        this.text = text;
     }
 
-    public String getCode() {
-        return code;
+    public boolean isDone() {
+        return done;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setDone(boolean done) {
+        this.done = done;
     }
 }

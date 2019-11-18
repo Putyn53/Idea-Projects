@@ -7,7 +7,7 @@
         version="3.1">
     <servlet>
         <servlet-name>task</servlet-name>
-        <servlet-class>io.github.Dev.HelloServlet</servlet-class>
+        <servlet-class>io.github.Dev.hello.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>task</servlet-name>

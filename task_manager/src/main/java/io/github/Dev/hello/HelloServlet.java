@@ -1,7 +1,9 @@
-package io.github.Dev;
+package io.github.Dev.hello;
+import io.github.Dev.lang.Lang;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,10 +34,17 @@ public class HelloServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info("Got request with parameters " + req.getParameterMap());
-
         String name = req.getParameter(NAME_PARAM);
         String lang = req.getParameter(LANG_PARAM);
+        Integer langId = null;
+        try
+        {
+            langId = Integer.valueOf(lang);
+        }catch (NumberFormatException e)
+        {
+            logger.warn("Non numeric lang id used: " + lang);
+        }
 
-        resp.getWriter().write(service.prepareGreeting(name, lang));
+        resp.getWriter().write(service.prepareGreeting(name, langId));
     }
 }
