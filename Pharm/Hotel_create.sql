@@ -244,6 +244,11 @@ SELECT HOTEL.NAZWA_HOTELU, COUNT(POKOJ.IDPOKOJ) AS ILOSC_POKOI
 FROM POKOJ LEFT JOIN HOTEL ON POKOJ.IDHOTEL = HOTEL.IDHOTEL
 GROUP BY HOTEL.NAZWA_HOTELU;
 
+-- UPDATE zmieniający datę płatności na datę wymeldowania pod warunkiem, że wybrana została płatność kartą
+UPDATE REZERWACJA
+SET data_platnosci = data_wymeldowania
+WHERE idplatnosc = 1;
+
 
 
 
