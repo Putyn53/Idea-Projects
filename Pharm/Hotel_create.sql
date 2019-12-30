@@ -49,7 +49,7 @@ CREATE TABLE Rezerwacja (
                             Data_wymeldowania date  NOT NULL,
                             Idplatnosc int  NOT NULL,
                             Data_platnosci date  NOT NULL,
-                            Pokoj_Idpokoj int  NOT NULL,
+                            Idpokoj int  NOT NULL,
                             CONSTRAINT Rezerwacja_pk PRIMARY KEY (IdRezerwacja)
 ) ;
 
@@ -100,7 +100,7 @@ ALTER TABLE Rezerwacja ADD CONSTRAINT Rezerwacja_Platnosc
 
 -- Reference: Rezerwacja_Pokoj (table: Rezerwacja)
 ALTER TABLE Rezerwacja ADD CONSTRAINT Rezerwacja_Pokoj
-    FOREIGN KEY (Pokoj_Idpokoj)
+    FOREIGN KEY (Idpokoj)
         REFERENCES Pokoj (Idpokoj);
 
 INSERT INTO WOJEWODZTWO (IDWOJEW, NAZWA_WOJEW) VALUES ('1', 'mazowieckie');
@@ -165,6 +165,8 @@ INSERT INTO PLATNOSC (IDPLATNOSC, NAZWA_PLATNOSCI) VALUES ('1', 'Gotowka');
 INSERT INTO PLATNOSC (IDPLATNOSC, NAZWA_PLATNOSCI) VALUES ('2', 'Karta');
 INSERT INTO PLATNOSC (IDPLATNOSC, NAZWA_PLATNOSCI) VALUES ('3', 'Blik');
 INSERT INTO PLATNOSC (IDPLATNOSC, NAZWA_PLATNOSCI) VALUES ('4', 'Przelew');
+INSERT INTO REZERWACJA (IDREZERWACJA, IDKLIENT, DATA_ZAMELDOWANIA, DATA_WYMELDOWANIA, IDPLATNOSC, DATA_PLATNOSCI, IDPOKOJ)
+VALUES (1,1,TO_DATE('12/01/2020', 'DD/MM/YYYY'),TO_DATE('15/01/2020', 'DD/MM/YYYY'),1,TO_DATE('11/01/2020', 'DD/MM/YYYY'),1);
 
 
 
