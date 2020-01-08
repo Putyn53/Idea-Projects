@@ -59,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577974969824</updated>
       <workItem from="1577974970939" duration="1943000" />
-      <workItem from="1578433914261" duration="640000" />
+      <workItem from="1578433914261" duration="1346000" />
     </task>
     <servers />
   </component>
@@ -71,9 +71,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="545" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577643845123" />
-    <state x="335" y="269" key="new project wizard" timestamp="1577979075959">
+    <state x="732" y="390" key="FileChooserDialogImpl" timestamp="1578486869231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="335" y="269" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1577979075959" />
+    <state x="732" y="390" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578486869231" />
+    <state x="335" y="269" key="new project wizard" timestamp="1578486870347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="335" y="269" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1578486870347" />
   </component>
 </project>
